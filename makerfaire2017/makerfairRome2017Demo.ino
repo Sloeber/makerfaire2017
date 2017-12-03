@@ -9,9 +9,9 @@ void setup() {
 void loop() {
 	const uint32_t currentMillis = millis();
 
-    // calculate the state of the leds
-	int ledValue1 = getBlinkLedValue(currentMillis, 1000, 2000);
-	int ledValue2 = getFadeLedValue(currentMillis, 1000, 2000);
+    // calculate the state of the leds BETTER CODE
+	int ledValue1 = getBlinkLedValue(currentMillis, 100, 2000);
+	int ledValue2 = getFadeLedValue(currentMillis, 100, 2000);
 
     // decide  on which actions we need to do
 	bool printAliveMessage = shouldIPrintKeepAliveMessage(currentMillis);
